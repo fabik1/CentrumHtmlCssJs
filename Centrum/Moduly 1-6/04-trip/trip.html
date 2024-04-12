@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum Przetwarzania Danych</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Dołączenie skryptu -->
+    <script src="js/trip.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Koszt podróży</h1>
+        <section>
+            Dystans (km):<br>
+            <input type="number" id="distance" placeholder="8.9"><br>
+            Spalanie (litry / 100 km):<br>
+            <input type="number" id="usage" placeholder="5.0"><br>
+            Cena paliwa (zł):<br>
+            <input type="number" id="price" placeholder="6.3"><br>
+            <br>
+            <button type="button" onclick="calculate()">Oblicz</button>
+            <br><br>
+
+            Koszt podróży (zł):<br>
+            <input type="number" id="cost">
+        </section>
+        <footer>
+            Copyright &copy; by Adrian Gałązka
+        </footer>
+    </div>
+
+    <!-- Strzałka powrotu -->
+    <div class="go-back">
+        <a href="../index.html">
+            <img src="../images/arrow-back.png" alt="">
+        </a>
+    </div>
+</body>
+</html>

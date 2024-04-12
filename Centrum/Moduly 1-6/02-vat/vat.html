@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum Przetwarzania Danych</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Dołączenie skryptu -->
+    <script src="js/vat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Netto / brutto</h1>
+        <section>
+            Kwota netto:
+            <input type="number" id="netto">
+            <br>
+            <br>
+            Stawka VAT:
+            <select id="vat">
+                <option value="23">23%</option>
+                <option value="8">8%</option>
+                <option value="5">5%</option>
+            </select>
+            <button type="button" onclick="calculate()">Oblicz</button>
+            <br>
+            <br>
+            Kwota brutto:
+            <input type="number" id="brutto">
+        </section>
+        <footer>
+            Copyright &copy; by Adrian Gałązka
+        </footer>
+    </div>
+
+    <!-- Strzałka powrotu -->
+    <div class="go-back">
+        <a href="../index.html">
+            <img src="../images/arrow-back.png" alt="">
+        </a>
+    </div>
+</body>
+</html>

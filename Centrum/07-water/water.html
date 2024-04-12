@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konwerter Temperatur</title>
+    <link rel="stylesheet" href="css/water.css">
+    <script src="js/water.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Centrum przetwarzania danych</h1>
+
+        <h2>Stany skupienia</h2>
+
+        <section>
+
+            <div class="little-shaded-box">
+                Temperatura wody &deg;C
+                <br>
+                <input type="number" id="temperature" value="12" onchange="inputChanged()" onkeyup="inputChanged()">
+                <br>
+                <br>
+                <input type="range" min="-300" max="300" id="range" onchange="rangeChanged()"
+                    onmousemove="rangeChanged()">
+                <br>
+                <br>
+
+            </div>
+
+            <img src="../images/search-icon-vector-illustration-700-228784034.jpg" alt="mrozi" id="picture">
+
+        </section>
+
+        <footer>
+            <br>
+            Copyright &copy; by Fabian Sulecki
+        </footer>
+
+    </div>
+
+    <div class="back">
+        <a href="../index.html">
+            <img src="../images/Arrows-Left-Round-icon.png">
+        </a>
+    </div>
+
+
+
+</body>
+
+</html>

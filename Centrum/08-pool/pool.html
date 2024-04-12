@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konwerter Temperatur</title>
+    <link rel="stylesheet" href="css/pool.css">
+    <script src="js/pool.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Architekt basenów</h1>
+
+        <section>
+            Długość basenu (m): 
+            <br>
+            <input type="number" id="length">
+            <br>
+            Szerokość basenu (m):
+            <br>
+            <input type="number" id="width">
+            <br>
+            Głębokosć basenu (m):
+            <br>
+            <input type="number" id="depth">
+            <br>
+            Kształt basenu: 
+            <br>
+        <div class="little-shaded-box">
+            <label><input type="radio" name="poolshape" id="shapeRectangle" checked> Prostokątny </label> 
+            <br>
+            <label><input type="radio" name="poolshape" id="shapeEllipse"> Eliptyczny </label> 
+            <br>
+            <label><input type="radio" name="poolshape" id="shapeTriangle"> Trójkątny </label> 
+            <br> 
+        </div>
+        <br>
+        Dodatkowe opcje: 
+        <br>
+        <br>
+        <label><input type="checkbox" id="fillTo90percent"> Wypełnij basen do 90% wysokości</label>
+        <br>
+        <br>
+        <button type="button" onclick="calculate()">Oblicz objętość</button>
+        <br>
+        <br>
+        Objętośc wody dm<sup>3</sup>:
+        <br>
+        <input type="number" id="result" readonly>
+        </section>
+
+        <footer>
+            <br>
+            Copyright &copy; by Fabian Sulecki
+        </footer>
+
+    </div>  
+
+    <div class="back">
+        <a href="../index.html">
+            <img src="../images/Arrows-Left-Round-icon.png">
+        </a>
+    </div>
+
+    <!-- radio button - przycisk opcji -->
+    <!-- name  - ta sama nazwa grupuje radio buttony -->
+    <!-- checked - domyślnie zaznaczony radio button -->
+    <!-- checkbox - przycisk wyboru -->
+    
+    
+    </body>
+    </html>

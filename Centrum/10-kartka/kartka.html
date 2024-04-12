@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Serduszkowe kartki</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Serduszkowe kartki</h1>
+            <div id="border">
+                <p id="emotka">😊</p>
+                <div id="demo">To jest próbkowany tekst</div>
+            </div>
+            Tekst kartki: <br>
+            <input type="text" id="input" onkeyup="changeText()">
+        </header>
+
+        <section>
+            Emoji: <br>
+            <select id="emoji" onchange="changeEmoji()">
+                <option value="smiley"> Smiley</option>
+                <option value="funny"> Funny</option>
+                <option value="mad"> Mad</option>
+                <option value="cry"> Cry</option>
+                <option value="love"> Love</option>
+            </select>
+        </section>
+
+        <section>
+            Efekty tekstowe: <br>
+            <label><input type="checkbox" id="bigLetters" onchange="changeOption()"> WIELKIE LITERY </label> <br>
+            <label><input type="checkbox" id="extendedText" onchange="changeOption()"> <span id="spacing">Rozserzony
+                    tekst</span> </label> <br>
+            <label><input type="checkbox" id="smallCaps" onchange="changeOption()"> <span id="variant">Kapitaliki</span>
+            </label> <br>
+        </section>
+
+        <section>
+            Ramka: <br>
+            <label><input type="radio" name="border" id="solid" onchange="changeBorder()"> Ciągła</label> <br>
+            <label><input type="radio" name="border" id="line" onchange="changeBorder()"> Kreskowa</label> <br>
+            <label><input type="radio" name="border" id="dotted" onchange="changeBorder()"> Kropkowa</label> <br>
+        </section>
+
+        <section id="rogi">
+            Zaokrąglone rogi: <br>
+            <input type="range" min="0" max="100" onchange="rangeChanged()" id="range">
+        </section>
+
+        <footer>
+            Copyright &copy; by Fabian Sulecki
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

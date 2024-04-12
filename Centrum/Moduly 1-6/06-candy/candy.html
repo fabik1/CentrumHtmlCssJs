@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum Przetwarzania Danych</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Dołączenie skryptu -->
+    <script src="js/candy.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Rozdzielacz krówek</h1>
+        <section>
+            Liczba krówek:<br>
+            <input type="number" id="candies"><br>
+            Liczba osób do otrzymania krówek:<br>
+            <input type="number" id="people"><br>
+            <br>
+            <button type="button" onclick="shareCandies()">Oblicz</button>
+            <br><br>
+            Ile krówek przypadnie na osobę:<br>
+            <input type="number" id="candiesPerPerson" readonly><br>
+            Ile krówek zostanie niepodzielnych:<br>
+            <input type="number" id="candiesRest" readonly><br>
+        </section>
+        <footer>
+            Copyright &copy; by Adrian Gałązka
+        </footer>
+    </div>
+
+    <!-- Strzałka powrotu -->
+    <div class="go-back">
+        <a href="../index.html">
+            <img src="../images/arrow-back.png" alt="">
+        </a>
+    </div>
+</body>
+</html>

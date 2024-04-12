@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum Przetwarzania Danych</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Dołączenie skryptu -->
+    <script src="js/temperatures.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Konwerter temperatur</h1>
+        <section>
+            Temperatura &deg;C
+            <input type="number" id="celsius">
+            <br>
+            Temperatura &deg;F
+            <input type="number" id="fahrenheit">
+            <br>
+            <button type="button" onclick="c2f()">&deg;C &rarr; &deg;F</button>
+            <button type="button" onclick="f2c()">&deg;F &rarr; &deg;C</button>
+        </section>
+        <footer>
+            Copyright &copy; by Adrian Gałązka
+        </footer>
+    </div>
+
+    <!-- Strzałka powrotu -->
+    <div class="go-back">
+        <a href="../index.html">
+            <img src="../images/arrow-back.png" alt="">
+        </a>
+    </div>
+</body>
+</html>

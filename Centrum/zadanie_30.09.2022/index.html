@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oprogramowanie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Koszt zamówienia oprogramowania</h1>
+        </header>
+            <label><input type="radio" name="version" id="standard" checked> Wersja standard 49 euro </label> 
+            <br>
+            <label><input type="radio" name="version" id="pro"> Wersja pro 99 euro </label> 
+            <br>
+            <label><input type="radio" name="version" id="ultimate"> Wersja ultimate 149 euro </label> 
+            <br>
+            <br>
+            Liczba licencji: 
+            <br>
+            <input type="number" id="license">
+            <br>
+            <br>
+            Kod zniżkowy:
+            <br>
+            <input type="text" id="discount">
+            <br>
+            <br>
+            <button type="button" onclick="calculate()">Przelicz</button>
+            <br>
+            <br>
+            Koszt zamówienia: (max. 2 miejsca po przecinku)
+            <br>
+            <br>
+            <input type="text" id="result" readonly>
+    </div>
+    
+</body>
+</html>

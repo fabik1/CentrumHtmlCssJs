@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutto/Netto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="js/VAT.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Centrum przetwarzania danych</h1>
+
+        <h2>Netto / brutto</h2>
+
+        <section>
+            Kwota netto:
+            <br>
+            <br>
+            <input type="number" id="netto">
+            <br>
+            Stawka VAT:
+            <select id="vat">
+                <option value="23">23%</option>
+                <option value="8">8%</option>
+                <option value="5">5%</option>
+                <option value="0">0%</option>
+            </select>
+            <br>
+            <br>
+            <button type="button" onclick="calculate()">Oblicz</button>
+            <br>
+            <br>
+            <hr>
+            <br>
+            Kwota brutto:
+            <br>
+            <br>
+            <input type="number" id="brutto">
+        </section>
+
+        <footer>
+            Copyright &copy; by Fabian Sulecki
+        </footer>
+
+    </div>
+
+    <div class="back">
+        <a href="../index.html">
+            <img src="../images/Arrows-Left-Round-icon.png">
+        </a>
+    </div>
+
+
+
+</body>
+
+</html>
